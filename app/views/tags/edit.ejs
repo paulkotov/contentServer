@@ -1,0 +1,21 @@
+<%- include('../Partials/head', { title: 'New Author' }) -%>
+<%- include('../Partials/menu') -%>
+
+<a href="<%= self.url('authors') %>" class="section">Authors</a>
+<i class="right angle icon divider"></i>
+<div class="active section">Edit author #<%= author.id %></div>
+
+<div class="ui container">
+    <div class="ui segment">
+        <form class="ui form" method="post" action="" enctype="application/x-www-form-urlencoded">
+            <div class="required field">
+                <label>Author name:</label>
+                <input type="text" name="name" placeholder="Author name" value="<%= author.name %>" required>
+            </div>
+            <button class="ui button" type="submit">Save</button>
+        </form>
+    </div>
+</div>
+
+<%- include('../Partials/endbody') -%>
+<%- include('../Partials/endhtml') -%>

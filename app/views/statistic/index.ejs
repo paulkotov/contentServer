@@ -1,0 +1,31 @@
+<%- include('../partials/head') %>
+<%- include('../partials/main') %>
+
+<div class="active section" style="padding: 10px;"><h2>Statistics</h2></div>
+    <div class="ui container">
+        <br/>
+        <table class="ui celled table">
+            <thead>
+            <tr>
+                <th>URL</th>
+                <th>Visitors</th>
+                <th>Watched</th>
+                <th>Payed</th>
+            </tr>
+            </thead>
+            <tbody>
+                <% rows.forEach(item => { %>
+                    <tr>
+                        <td><%= item.url %></td>
+                        <td><%= item.visitors %></td>
+                        <td><%= item.watched %></td>
+                        <td><%= item.payed %></td>
+                    </tr>
+                <% }) %>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<%- include('../partials/endmain') %>
+<%- include('../partials/endhtml') %>

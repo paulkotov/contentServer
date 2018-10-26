@@ -1,0 +1,26 @@
+<%- include('../partials/head', { title: 'Comments' })  %>
+<%- include('../partials/menu')  %>
+
+<div class="active section">Comments</div>
+    <div class="ui container">
+        <table class="ui celled table">
+            <thead>
+            <tr>
+                <th>ID</th>
+                <th>Category name</th>
+            </tr>
+            </thead>
+            <tbody>
+            <% rows.forEach(item => { %>
+                <tr>
+                <td>item.id</td>
+                <td>item.name</td>
+                </tr>
+            <% }) %>
+            </tbody>
+        </table>
+    </div>
+</div>  
+
+ <%- include('../Partials/endbody') -%>
+ <%- include('../Partials/endhtml') -%> 

@@ -1,0 +1,25 @@
+<%- include('../partials/head', { title: 'Video' })  %>
+<%- include('../partials/main')  %>
+
+<div class="active section">Authors</div>
+<div class="ui container">
+    <table class="ui celled table">
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>Title</th>
+        </tr>
+        </thead>
+        <tbody>
+          <% rows.forEach(item => { %>
+            <tr>
+              <td><%= item.id %></td>
+              <td><%= item.title %></td>
+            </tr>
+          <% }) %>
+        </tbody>
+     </table>
+ </div> 
+
+ <%- include('../partials/endmain') %>
+ <%- include('../partials/endhtml') %>

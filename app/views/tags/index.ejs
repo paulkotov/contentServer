@@ -1,0 +1,26 @@
+<%- include('../partials/head', { title: 'Tags' })  %>
+<%- include('../partials/menu')  %>
+
+<div class="active section">Tags</div>
+
+<div class="ui container">
+    <table class="ui celled table">
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+        </tr>
+        </thead>
+        <tbody>
+          <% rows.forEach(item => { %>
+            <tr>
+              <td>item.id</td>
+              <td>item.name</td>
+            </tr>
+          <% }) %>
+        </tbody>
+     </table>
+ </div>  
+
+ <%- include('../Partials/endbody') -%>
+ <%- include('../Partials/endhtml') -%> 
